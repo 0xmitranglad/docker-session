@@ -28,7 +28,7 @@ app.get("/", async (req, res) => {
 
         console.log({ realVisit })
         res.send(`Number of Visits are: ${realVisit}`)
-        // process.exit(1000)
+        // process.exit(0)
     } catch (error) {
         console.error(error)
         res.status(500).send("Error occurred")
